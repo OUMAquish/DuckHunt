@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textViewPosition"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/pixel"
+        android:text="POS."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDucks"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/pixel"
+        android:gravity="center"
+        android:text="Ducks"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPosition"
+        app:layout_constraintStart_toEndOf="@+id/textViewPosition"
+        app:layout_constraintTop_toTopOf="@+id/textViewPosition" />
+
+    <TextView
+        android:id="@+id/textViewNick"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/pixel"
+        android:text="NickName"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDucks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewDucks"
+        app:layout_constraintTop_toTopOf="@+id/textViewDucks" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
